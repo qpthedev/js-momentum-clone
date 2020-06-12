@@ -7,26 +7,41 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="js-clock">
-      <h1 class="js-title">
-        00:00
-      </h1>
+    <div class="content-container">
+      <div class="js-clock">
+        <h1 class="js-title">
+          00:00
+        </h1>
+      </div>
+
+      <form action="" class="js-form form">
+        <input
+          id="nameForm "
+          type="text"
+          placeholder="Hello, awesome. What is your name?"
+        />
+      </form>
+
+      <h4 class="js-greetings greetings"></h4>
+
+      <h2>What are your goals for the day?</h2>
+      <form action="" class="js-toDoForm">
+        <input id="taskForm" type="text" placeholder="Write a task" />
+      </form>
+
+      <h4>In Progress</h4>
+      <ul class="js-pendingList"></ul>
+
+      <h4>Finished Tasks</h4>
+      <ul class="js-doneList"></ul>
+
+      <span class="js-weather"></span>
     </div>
-
-    <form action="" class="js-form form">
-      <input type="text" placeholder="What is your name?" />
-    </form>
-
-    <h4 class="js-greetings greetings"></h4>
-
-    <form action="" class="js-toDoForm">
-      <input type="text" placeholder="Write a to do" />
-    </form>
-
-    <ul class="js-toDoList"></ul>
 
     <script src="clock.js"></script>
     <script src="greeting.js"></script>
     <script src="todo.js"></script>
+    <script src="background.js"></script>
+    <script src="weather.js"></script>
   </body>
 </html>
